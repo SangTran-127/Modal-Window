@@ -16,7 +16,8 @@ for (let i = 0; i < show_modal.length; i++) {
   show_modal[i].addEventListener('click', openModal);
 }
 close.addEventListener('click', closeModal);
-overlay.addEventListener('click', closeModal);
+overlay.addEventListener('click', closeModal); // xử lý khi click vào phần ngoài của cái tab
+//nhấn nút esc để thoát tab
 document.addEventListener('keydown', function (btn) {
   if (btn.key === 'Escape') {
     closeModal();
